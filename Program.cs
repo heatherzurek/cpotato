@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace myApp
 {
@@ -176,8 +177,20 @@ namespace myApp
             // WorkingWithDecimals();
             // ExploreIf();
             // LoopsPractice();
-            ChallengeQuestion();
+            // ChallengeQuestion();
 
+        
+            var names = new List<string> { "heather","reese", "katlin", "bryan", "desmond"};
+            Console.WriteLine();
+            names.Add("Hank");
+            names.Add("Roger");
+            names.Remove("reese");
+            foreach (var name in names)
+            {
+                Console.WriteLine($"Hello {name.ToUpper()}!");
+                // Console.WriteLine($"My name is {names[1]}");
+                Console.WriteLine($"The list has {names.Count} people in it");
+            }
         }
     }
 }
