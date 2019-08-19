@@ -180,17 +180,39 @@ namespace myApp
             // ChallengeQuestion();
 
         
-            var names = new List<string> { "heather","reese", "katlin", "bryan", "desmond"};
-            Console.WriteLine();
-            names.Add("Hank");
-            names.Add("Roger");
-            names.Remove("reese");
+             var names = new List<string> { "Heather", "Ana", "Felipe" };
             foreach (var name in names)
             {
                 Console.WriteLine($"Hello {name.ToUpper()}!");
-                // Console.WriteLine($"My name is {names[1]}");
-                Console.WriteLine($"The list has {names.Count} people in it");
             }
+
+            Console.WriteLine();
+            names.Add("Maria");
+            names.Add("Bill");
+            names.Remove("Ana");
+            foreach (var name in names)
+            {
+                Console.WriteLine($"Hello {name.ToUpper()}!");
+            }
+
+            Console.WriteLine($"My name is {names[0]}");
+            Console.WriteLine($"I've added {names[2]} and {names[3]} to the list");
+
+            Console.WriteLine($"The list has {names.Count} people in it");
+
+            var index = names.IndexOf("Felipe");
+            Console.WriteLine($"The name {names[index]} is at index {index}");
+
+            var notFound = names.IndexOf("Not Found");
+            Console.WriteLine($"When an item is not found, IndexOf returns {notFound}");
+
+            names.Sort();
+            foreach (var name in names)
+            {
+                Console.WriteLine($"Hello {name.ToUpper()}!");
+            }
+
+
         }
     }
 }
