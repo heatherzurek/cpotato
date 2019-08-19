@@ -81,14 +81,9 @@ namespace myApp
             Console.WriteLine(i);
         }
 
-        static void Main(string[] args) 
+        static void WorkingWithDecimals()
         {
-            // WorkingWithIntegers();
-            // OrderPrecedence();
-            // TestLimits();
-            WorkWithDoubles();
-
-            decimal min = decimal.MinValue;
+                        decimal min = decimal.MinValue;
             decimal max = decimal.MaxValue;
             Console.WriteLine($"The range of the decimal type is {min} to {max}");
 
@@ -99,6 +94,75 @@ namespace myApp
             decimal c = 1.0M;
             decimal d = 3.0M;
             Console.WriteLine( c / d);
+        }
+
+        static void ExploreIf()
+        {
+            int a = 5;
+            int b = 3;
+            // if (a + b > 10)
+            // {
+            //     Console.WriteLine("The answer is greater than 10.");
+            // }
+            // else
+            // {
+            //     Console.WriteLine("The answer is NOT greater than 10.");
+            // } 
+
+            int c = 4;
+            if ((a + b + c > 10) || (a == b))
+            // == tests for equality
+            // = assigns value
+            {
+                Console.WriteLine("The answer is greater than 10");
+                Console.WriteLine("And the first number is equal to the second");
+            }
+            else 
+            {
+                Console.WriteLine("The answer is not greater than 10");
+                Console.WriteLine("Or the first number is not equal to the second");
+            }
+        }
+
+        static void LoopsPractice() 
+        {
+                        // int counter = 0;
+            // while (counter < 10)
+            // {
+            //     Console.WriteLine($"Hello World! The counter is {counter}");
+            //     counter ++;
+            // }
+
+            //++ is the increment operator - adds 1 to the value of counter and stores that value in counter variable
+            // while checks a condition and executes the statement or statement block following the while. It repeatedly checks the condition and executing those statements until the condition is false. 
+
+            // int counter = 0;
+            // do 
+            // {
+            //     Console.WriteLine($"Hello World! The counter is {counter}");
+            //     counter++;
+            // } while (counter < 10);
+
+            //int index = 0; is the for initializer
+            //index is the loop variable and sets initial value to 0
+            // index < 10 is the for condition, it declares that this for loop continues to execute as long as the value of the counter is less than 10
+            //for iterator, index++ specifies how to modify the loop variable after executing the block following the for statement
+            
+            for(int index = 0; index < 10; index++)
+            {
+                Console.WriteLine($"Hello world the index is {index}");
+            }
+        }
+
+        static void Main(string[] args) 
+        {
+            // WorkingWithIntegers();
+            // OrderPrecedence();
+            // TestLimits();
+            // WorkWithDoubles();
+            // WorkingWithDecimals();
+            // ExploreIf();
+            // LoopsPractice();
 
         }
     }
