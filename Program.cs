@@ -168,19 +168,9 @@ namespace myApp
             Console.WriteLine($"The sum is {sum}");
         }
 
-        static void Main(string[] args) 
+        static void ListPractice()
         {
-            // WorkingWithIntegers();
-            // OrderPrecedence();
-            // TestLimits();
-            // WorkWithDoubles();
-            // WorkingWithDecimals();
-            // ExploreIf();
-            // LoopsPractice();
-            // ChallengeQuestion();
-
-        
-             var names = new List<string> { "Heather", "Ana", "Felipe" };
+                         var names = new List<string> { "Heather", "Ana", "Felipe" };
             foreach (var name in names)
             {
                 Console.WriteLine($"Hello {name.ToUpper()}!");
@@ -210,7 +200,21 @@ namespace myApp
             foreach (var name in names)
             {
                 Console.WriteLine($"Hello {name.ToUpper()}!");
+                Console.WriteLine($"Hello, {name.ToLower()}!!");
             }
+        }
+
+        static void Main(string[] args) 
+        {
+            // WorkingWithIntegers();
+            // OrderPrecedence();
+            // TestLimits();
+            // WorkWithDoubles();
+            // WorkingWithDecimals();
+            // ExploreIf();
+            // LoopsPractice();
+            // ChallengeQuestion();
+            // ListPractice();
 
 
         }
